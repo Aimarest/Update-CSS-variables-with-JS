@@ -1,7 +1,8 @@
 /* VARIABLES */
 :root{
     --back-color:#000000;
-    --blur:10 px;
+    --blur:0px;
+    --padding:1rem;
 }
 body{
      display:flex;
@@ -10,7 +11,7 @@ body{
     flex-direction: column;
 }
 .title{
-   
+ color:var(--back-color)  
 }
 .variables__input {
 
@@ -19,7 +20,7 @@ body{
 
 .effects__image {
  width: 50rem; 
- padding:2rem;
+ padding:var(--padding);
 background-color:var(--back-color);
 filter:blur(var(--blur))
 }
