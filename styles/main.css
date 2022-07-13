@@ -1,8 +1,8 @@
 /* VARIABLES */
 :root{
-    --base-color:#000000;
+    --color:#000000;
     --blur:0px;
-    --padding:1rem;
+    --spacing:1rem;
 }
 body{
      display:flex;
@@ -16,8 +16,8 @@ body{
 
 .effects__image {
  width: 50rem; 
- padding:var(--padding);
-background-color:var(--base-color);
+ padding:var(--spacing);
+background-color:var(--color);
 filter:blur(var(--blur));
 margin-top:1rem;
 }

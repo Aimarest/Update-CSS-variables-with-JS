@@ -1,14 +1,23 @@
-//Variable de elementos del DOM:
+//Variables de elementos del DOM:
 const inputs = document.querySelectorAll('.input');
-
+const root = document.documentElement;
+const title = document.querySelector('.title');
+console.log(root)
 //Función manejadora del evento:
 
 function handleChangeInput(ev) {
-
+    console.log(ev.target);
+    console.log(ev.target.value);
+    console.log(ev.target.name);
+    const property = ev.target.name;
+    const value = ev.target.value;
+     const sizing = this.dataset.sizing || '';
+    root.style.setProperty(`--${property}`, ` ${value}` + `${sizing}`);
+    title.style.color = value;
 }
 
 //Evento:
-inputs.forEach(input => input.addEventListener('change', handleChangeInput));
+inputs.forEach(input => input.addEventListener('input', handleChangeInput));
 /*
 
 Código con el que se podría cambiar elemento por elemento, con funciones específicas y cambiando directamente las propiedades de cada elemento del DOM (no las variables):
