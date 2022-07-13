@@ -1,0 +1,25 @@
+/* VARIABLES */
+:root{
+    --back-color:#000000;
+    --blur:10 px;
+}
+body{
+     display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+   
+}
+.variables__input {
+
+    
+}
+
+.effects__image {
+ width: 50rem; 
+ padding:2rem;
+background-color:var(--back-color);
+filter:blur(var(--blur))
+}

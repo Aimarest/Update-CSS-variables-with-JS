@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update css variables with js</title>
-    <link rel="stylesheet" href="./styles/maincss">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
-    <h1>Update CSS variables with <span>JS</span></h1>
-    <label to="spacing">Spacing</label>
-    <input type="range" id="spacing"/>
-    <label to="blur">Blur</label>
-    <input type="range" id="blur"/>
-    <label to="color">Base Color</label>
-    <input type="color" id="color"/>
-    <scrip src="./index.js"></scrip>
+    <h1 class="title">Update CSS variables with <span>JS</span></h1>
+    <section class="variables">
+        <label class="variables__label" to="spacing">Spacing</label>
+        <input class="variables__spacing" type="range" id="spacing" />
+        <label class="variables__label" to="blur">Blur</label>
+        <input class="variables__blur" type="range" id="blur" />
+        <label class="variables__label" to="color">Base Color</label>
+        <input class="variables__color" type="color" id="color" value="#000000"/>
+
+    </section>
+    <section class="effects">
+        <image class="effects__image" src="./styles/images/beautiful-tropical-beach-sea.jpg"></image>
+    </section>
+    <script src="./index.js"></script>
 </body>
+
 </html>
