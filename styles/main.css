@@ -13,14 +13,11 @@ body{
 .title{
  color:var(--back-color)  
 }
-.variables__input {
-
-    
-}
 
 .effects__image {
  width: 50rem; 
  padding:var(--padding);
 background-color:var(--back-color);
-filter:blur(var(--blur))
+filter:blur(var(--blur));
+margin:1rem;
 }
