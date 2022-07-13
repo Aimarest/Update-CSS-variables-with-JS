@@ -2,7 +2,6 @@
 
 const inputs = document.querySelectorAll('.input');
 const root = document.documentElement;
-const title = document.querySelector('.title');
 
 
 //Función manejadora del evento:
@@ -12,7 +11,6 @@ function handleChangeInput(ev) {
     const value = ev.target.value;
     const sizing = this.dataset.sizing || '';
     root.style.setProperty(`--${property}`, ` ${value}` + `${sizing}`);
-   // title.style.color = value;
 }
 
 //Evento:
