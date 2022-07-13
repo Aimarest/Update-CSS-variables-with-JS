@@ -1,13 +1,28 @@
-'use strict';
+//Variable de elementos del DOM:
+const inputs = document.querySelectorAll('.input');
 
-//Variables de los elementos del DOM:
+//Función manejadora del evento:
+
+function handleChangeInput(ev) {
+
+}
+
+//Evento:
+inputs.forEach(input => input.addEventListener('change', handleChangeInput));
+/*
+
+Código con el que se podría cambiar elemento por elemento, con funciones específicas y cambiando directamente las propiedades de cada elemento del DOM (no las variables):
+
+**** Variables de los elementos del DOM ****
 
 const color = document.querySelector('.variables__color');
 const image = document.querySelector('.effects__image');
 const blurInput = document.querySelector('.variables__blur');
 const spacing = document.querySelector('.variables__spacing');
 const title = document.querySelector('.title');
-//Funciones:
+
+**** Funciones ****
+
 function handleChangeBlur(ev){
     console.log('Se está cambiando la visión',ev.target.value);
     image.style.filter = `blur(${ev.target.value}px)`;
@@ -23,6 +38,12 @@ function handleChangeSpacing(ev){
     console.log('Se esta cambiando el padding de la imagen',ev.target.value,'px')
 image.style.padding = `${ev.target.value}px`;
 }
+
+**** Eventos ****
+
+
 blurInput.addEventListener('input',handleChangeBlur);
 color.addEventListener('input', handleChangeColor);
 spacing.addEventListener('input', handleChangeSpacing)
+
+*/

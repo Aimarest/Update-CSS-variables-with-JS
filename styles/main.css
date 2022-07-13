@@ -1,6 +1,6 @@
 /* VARIABLES */
 :root{
-    --back-color:#000000;
+    --base-color:#000000;
     --blur:0px;
     --padding:1rem;
 }
@@ -11,13 +11,13 @@ body{
     flex-direction: column;
 }
 .title{
- color:var(--back-color)  
+ color:var(--base-color)  
 }
 
 .effects__image {
  width: 50rem; 
  padding:var(--padding);
-background-color:var(--back-color);
+background-color:var(--base-color);
 filter:blur(var(--blur));
-margin:1rem;
+margin-top:1rem;
 }
