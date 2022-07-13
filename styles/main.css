@@ -10,8 +10,9 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.title{
- color:var(--base-color)  
+.title {
+ color: var(--color);
+ font-size: 3rem; 
 }
 
 .effects__image {
